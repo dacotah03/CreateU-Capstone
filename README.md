@@ -2,34 +2,43 @@
 
 ## Overview
 
-What is your app? Brief description in a couple of sentences.
+CreateU is An app for content creators that aims to not only simplify their analytics but also give the user an insight on A succesful posting formula that can help build their brand
 
 ### Problem
 
-Why is your app needed? Background information around any pain points or other reasons.
+Something I've noticed from being A content creator is that often new creators dont understand their analytics or even what theyre for, analytics are important for brand growth and many creators would be able to grow their pages more effeciently if they had access to A version of their analytics that they could understand
 
 ### User Profile
 
-Who will use your app? How will they use it? Any special considerations that your app must take into account.
+Content creators, ideally to account for that the user would be able to either create an account using their preferred sociial platforms login.
 
 ### Features
 
-List the functionality that your app will include. These can be written as user stories or descriptions with related details. Do not describe _how_ these features are implemented, only _what_ needs to be implemented.
+Users will be able to log in using their Social Platform login
+Users will be able to see accurate Analytics from the selected platform in A simplified way
+
 
 ## Implementation
 
 ### Tech Stack
 
-List technologies that will be used in your app, including any libraries to save time or provide more functionality. Be sure to research any potential limitations.
+-REACT
+-SASS
+-SQL
+
 
 ### APIs
 
-List any external sources of data that will be used in your app.
+https://dev.twitch.tv/docs/api/reference/
+https://developers.tiktok.com/
+https://api.data365.co/v1.1/instagram/docs
+
 
 ### Sitemap
 
-List the pages of your app with brief descriptions. You can show this visually, or write it out.
-
+HomePage
+User Dashboard Page
+Content Page (Daily/Weekly)
 ### Mockups
 
 Provide visuals of your app's screens. You can use tools like Figma or pictures of hand-drawn sketches.
