@@ -41,11 +41,10 @@ User Dashboard Page
 Content Page (Daily/Weekly)
 ### Mockups
 
-Provide visuals of your app's screens. You can use tools like Figma or pictures of hand-drawn sketches.
+[Homepage](./assets/IMG_2371.jpg)
 
 ### Data
-
-Describe your data and the relationships between them. You can show this visually using diagrams, or write it out. 
+ 
 
 ### Endpoints
 
