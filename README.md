@@ -41,7 +41,7 @@ User Dashboard Page
 Content Page (Daily/Weekly)
 ### Mockups
 
-[Homepage](./assets/IMG_2371.jpg)
+![Homepage](./assets/IMG_2371.jpg)
 
 ### Data
  
