@@ -1,0 +1,78 @@
+.login{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    &__hero{
+        &-overlay{
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+
+            background:black;
+            background:rgba(0,0,0,0.8);
+
+            filter:blur(4px);
+            -o-filter:blur(4px);
+            -ms-filter:blur(4px);
+            -moz-filter:blur(4px);
+            -webkit-filter:blur(4px);
+            &-img img{
+                width: --webkit-fill-available;
+            }
+        }
+    }
+    &__top{
+        position: relative;
+        bottom: 37rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        &-logo {
+            width: 7rem;
+            position: relative;
+            left: 8rem;
+        }
+    }
+    &__form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        bottom: 35rem;
+        justify-content: space-between;
+        height: 14rem;
+    
+        &-header{
+            color: #FFFFFF;
+        }
+        &-user{
+            border-left: none;
+            border-right: none;
+            border-top: none;
+            background-color: transparent;
+            border-color: #FFFFFF;
+        }
+        &-pass{
+            border-left: none;
+            border-right: none;
+            border-top: none;
+            background-color: transparent;
+            border-color: #FFFFFF;
+        }
+        &-submit{
+            width: 7rem;
+            height: 1rem;
+            border-radius: 3rem;
+        }
+        &-google{
+            width: 7rem;
+            height: 1rem;
+            border-radius: 3rem;
+            background-position: center;
+        }
+    }
+    
+}
