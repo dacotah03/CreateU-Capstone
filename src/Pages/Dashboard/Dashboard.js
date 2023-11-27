@@ -4,8 +4,12 @@ import pfp from '../../assets/user.JPG'
 import add from '../../assets/icons/🦆 icon _plus_.png'
 import notify from '../../assets/icons/🦆 icon _bell outline_.png'
 import pfp2 from '../../assets/user2.JPG';
-
+import { Navigate, useNavigate } from 'react-router'
 const Dashboard = () => {
+    const navigate = useNavigate();
+    const handleClick = () =>{
+        navigate('/proposals')
+    }
     return ( 
         <div className='dashboard'>
             <div className='dashboard__top'>
@@ -18,7 +22,7 @@ const Dashboard = () => {
             <div className='dashboard__nav'>
                 <div className='dashboard__nav-buttons'>
                 <button className='dashboard__nav-buttons-select'>Dashboard</button>
-                <button className='dashboard__nav-buttons-unselected'>Proposals</button>
+                <button className='dashboard__nav-buttons-unselected' onClick={handleClick}>Proposals</button>
                 </div>
                 <img className='dashboard__nav-add'src={add}/>
             </div>

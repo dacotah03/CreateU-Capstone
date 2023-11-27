@@ -1,0 +1,38 @@
+.listing{
+    background-color: #1E1E1E;
+    width: 100%;
+    padding: 1rem;
+    &__top{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        &-menu{
+            width: 3rem;
+        }
+        &-userpfp{
+            width: 4rem;
+            height: 4rem;
+            border-radius: 50%;
+        }
+    }
+    &__nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        &-text{
+            width: 70vw;
+            height: 4vh;
+            border-radius: 3rem;
+        }
+        &-search{
+            width: 3.5rem;
+        }
+    }
+    &__main{
+        background-color: #CCFCFF;
+        height: 80vh;
+        &-info{
+            background-color: #1E1E1E;
+        }
+    }
+}

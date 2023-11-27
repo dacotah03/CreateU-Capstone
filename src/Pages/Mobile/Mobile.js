@@ -4,6 +4,7 @@ import SignIn from '../../components/SignIn/SignIn/SignIn';
 import Signout from '../../components/Signout/Signout';
 import Dashboard from '../Dashboard/Dashboard';
 import Proposals from '../Proposals/Proposals';
+import Listing from '../Listing/Listing';
 
 const Mobile = () => {
   return (
@@ -13,6 +14,7 @@ const Mobile = () => {
           <Route path='/' element={<SignIn />} />
           <Route path='/dashboard' element={<Dashboard />} />
           <Route path='/proposals' element={<Proposals/>} />
+          <Route path='/job-listing' element={<Listing/>} />
           <Route path='/logout' element={<Signout />} />
         </Routes>
       </BrowserRouter>
