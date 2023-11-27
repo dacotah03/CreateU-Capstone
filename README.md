@@ -45,10 +45,10 @@ Analytics page: A very simplified version of the users analytics
 
 ### Mockups
 
-![SignIn](./assets/IMG_2371.jpg)
-![HomePage](./assets/IMG_2370.jpg)
-![Creator](./assets//IMG_2369.jpg)
-![Brands](./assets/IMG_2368.jpg)
+![SignIn](./src/assets/IMG_CEF10B0390E4-1.jpeg)
+![HomePage](./src/assets/IMG_CEF10B0390E4-2.jpeg)
+![Creator](./src/assets/IMG_CEF10B0390E4-3.jpeg)
+![Brands](./src/assets/IMG_CEF10B0390E4-4.jpeg)
 ### Data
 
 If i can, the data i would need would come from the users social pages after they log in with them. I would be able to use that data and adjust the more complicated words into eaasier to understand ones to help break down their purpose for the user. If not the data entered by the user to create their account would help my program pick their niche out of 5 possible options and using that niche i would have preprogrammed suggestions based off whats trending for those niches

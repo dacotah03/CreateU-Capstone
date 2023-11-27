@@ -1,0 +1,142 @@
+.proposals{
+    background-color: #1E1E1E;
+    width: 100%;
+    padding: 1rem;
+    &__top{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        &-menu{
+            width: 3rem;
+        }
+        &-userpfp{
+            width: 4rem;
+            height: 4rem;
+            border-radius: 50%;
+        }
+    }
+    &__header{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        &-text{
+            color: #CCFCFF;
+        }
+    }
+    &__nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        &-buttons{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 65vw;
+            position: relative;
+            left: 2rem;
+            &-select{
+                background-color: #00696F;
+                color: #FFFFFF;
+                width: 30vw;
+                height: 4vh;
+                border-radius: 5rem;
+                border: none;
+            }
+            &-unselected{
+                background-color: #CCFCFF;
+                color: #1E1E1E;
+                width: 30vw;
+                height: 4vh;
+                border-radius: 5rem;
+                border: none;
+            }
+        }
+        &-search{
+            width: 3rem;
+            position: relative;
+            left: 2rem;
+        }
+    }
+
+    &__main{
+        background-color: #CCFCFF;
+        height: 80vh;
+        padding: 1rem;
+        &-approved{
+            &-listing{
+                &-job{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        height: 16vh;
+                    &-jobs{
+                        border-radius: .6rem;
+                        background-color: #1E1E1E;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-around;
+                        height: 5vh;
+                        align-items: center;
+
+                        p{
+                            color: #FFFFFF;
+                            font-size: .6rem;
+                        }
+                    }
+                }
+            }
+        }
+        &-rejected{
+            &-listing{
+                &-job{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        height: 16vh;
+                    &-jobs{
+                        border-radius: .6rem;
+                        background-color: #1E1E1E;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-around;
+                        height: 5vh;
+                        align-items: center;
+
+                        p{
+                            color: #FFFFFF;
+                            font-size: .6rem;
+                        }
+                    }
+                }
+            }
+        }
+    &-pending{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 20vh;
+        &-listing{
+            &-job{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    height: 16vh;
+                &-jobs{
+                    border-radius: .6rem;
+                    background-color: #1E1E1E;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    height: 5vh;
+                    align-items: center;
+
+                    p{
+                        color: #FFFFFF;
+                        font-size: .6rem;
+                    }
+                }
+            }
+        }
+    }
+    }
+}
