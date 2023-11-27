@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import Mobile from './Pages/Mobile/Mobile';
+import Mobile from '../src/pages/Mobile/Mobile'
 
 function App() {
   return (
