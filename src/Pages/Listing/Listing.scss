@@ -19,6 +19,7 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
+        align-items: center;
         &-text{
             width: 70vw;
             height: 4vh;
@@ -26,13 +27,41 @@
         }
         &-search{
             width: 3.5rem;
+            position: relative;
+            top: 3rem;
         }
     }
     &__main{
         background-color: #CCFCFF;
-        height: 80vh;
+        padding: 1rem;
         &-info{
             background-color: #1E1E1E;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 1rem;
+            margin-bottom: 1rem;
+
+            p{
+                color: #CCFCFF;
+            }
+        }
+        &-text{
+            p{
+                color: #1E1E1E;
+            }
+            &-title{
+                background-color: #AFAFAF;
+                height: 3rem;
+                display: flex;
+                justify-content: center;
+                font-weight: 700;
+            }
+            &-description{
+                background-color: #AFAFAF;
+                padding-left: 1rem;
+            }
         }
     }
 }
