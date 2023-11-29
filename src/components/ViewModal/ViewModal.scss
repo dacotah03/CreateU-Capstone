@@ -1,0 +1,16 @@
+.viewmodal{
+    &__main{
+        background-color: aliceblue;
+        height: -webkit-fill-available;
+        position: fixed;
+        width: 50%;
+        &-tabs{
+            display: flex;
+            flex-direction: column;
+            p{
+                font-size: 1.5rem;
+                font-weight: 300;
+            }            
+        }
+    }
+}

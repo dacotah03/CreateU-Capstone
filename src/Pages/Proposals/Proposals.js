@@ -2,6 +2,7 @@ import menu from '../../assets/icons/🦆 icon _menu_.png'
 import pfp from '../../assets/user.JPG'
 import search from '../../assets/icons/🦆 icon _search outline_.png'
 import '../Proposals/Proposals.scss'
+import ViewModal from '../../components/ViewModal/ViewModal'
 import { Navigate, useNavigate} from 'react-router-dom'
 
 const Proposals = () => {
@@ -12,7 +13,7 @@ const Proposals = () => {
     return ( 
         <div className='proposals'>
         <div className='proposals__top'>
-            <img className='proposals__top-menu' src={menu}/>
+           <ViewModal/>
             <img className='proposals__top-userpfp' src={pfp}/>
         </div>
         <div className='proposals__header'>

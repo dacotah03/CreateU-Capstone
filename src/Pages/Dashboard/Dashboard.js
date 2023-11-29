@@ -4,6 +4,7 @@ import pfp from '../../assets/user.JPG'
 import add from '../../assets/icons/🦆 icon _plus_.png'
 import notify from '../../assets/icons/🦆 icon _bell outline_.png'
 import pfp2 from '../../assets/user2.JPG';
+import ViewModal from '../../components/ViewModal/ViewModal'
 import { Navigate, useNavigate } from 'react-router'
 const Dashboard = () => {
     const navigate = useNavigate();
@@ -13,7 +14,7 @@ const Dashboard = () => {
     return ( 
         <div className='dashboard'>
             <div className='dashboard__top'>
-                <img className='dashboard__top-menu' src={menu}/>
+               <ViewModal/>
                 <img className='dashboard__top-userpfp' src={pfp}/>
             </div>
             <div className='dashboard__header'>
