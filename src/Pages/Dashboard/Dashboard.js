@@ -1,19 +1,44 @@
-import '../Dashboard/Dashboard.scss'
-import add from '../../assets/icons/🦆 icon _plus_.png'
-import notify from '../../assets/icons/🦆 icon _bell outline_.png'
+import React, { useState, useEffect } from 'react';
+import '../Dashboard/Dashboard.scss';
+import add from '../../assets/icons/🦆 icon _plus_.png';
+import notify from '../../assets/icons/🦆 icon _bell outline_.png';
 import pfp2 from '../../assets/user2.JPG';
-import { useNavigate } from 'react-router'
-import { useState } from 'react'
-import NavBar from '../../components/NavBar/NavBar'
+import { useNavigate } from 'react-router';
+import NavBar from '../../components/NavBar/NavBar';
+import BarChart from '../../components/Chart/Chart';
+import { chartData } from '../../components/Data/Data';
+
 const Dashboard = () => {
     const navigate = useNavigate();
     const handleClick = () => {
-        navigate('/proposals')
-    }
-    const [modal, setModal] = useState(false)
+        navigate('/proposals');
+    };
+
+    const [modal, setModal] = useState(false);
     const toggleModal = () => {
-        setModal(!modal)
-    }
+        setModal(!modal);
+    };
+
+    // const charts = [
+    //     {
+    //         labels: chartData.map((data) => data.Day),
+    //         datasets: [
+    //             {
+    //                 label: 'Post Interaction',
+    //                 data: chartData.map((data) => data['12a']),
+    //             },
+    //         ],
+    //     },
+    // ];
+
+    // const [currentChart, setCurrentChart] = useState(charts[0]);
+
+    useEffect(() => {
+        return () => {
+        }
+
+    },[]);
+
     return (
         <div className='dashboard'>
             <NavBar/>
@@ -50,10 +75,20 @@ const Dashboard = () => {
                     </div>
                 </div>
                 <div className='dashboard__stats-charts'>
-                    <div className='dashboard__stats-charts-placeholder'></div>
-                    <button className='dashboard__stats-charts-notify'> Notify Me
-                        <img className='dashboard__stats-charts-notify-icons' src={notify} alt='bell symbol' onClick={toggleModal} /></button>
+                <div className='dashboard__stats-charts-placeholder'>
+                    {/* <BarChart chartData={currentChart} /> */}
                 </div>
+                <button
+                    // className='dashboard__stats-charts-notify'
+                    // onClick={() => {
+                    //     setCurrentChart(charts[1]); // Switch to the next chart
+                    //     toggleModal(); // Open the modal after switching the chart (if needed)
+                    // }}
+                >
+                    Notify Me
+                    <img className='dashboard__stats-charts-notify-icons' src={notify} alt='bell symbol' />
+                </button>
+            </div>
             </div>
             <div className='dashboard__user'>
                 <h2 className='dashboard__user-header'>Connects</h2>
