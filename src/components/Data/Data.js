@@ -1,8 +1,8 @@
-export const chartData = 
+export const UserData = 
 [
     {
         "Day": "Monday",
-        "12a":824,
+        "inter":824,
         "3a":416,
         "6a":799,
         "9a":1145,
@@ -15,7 +15,7 @@ export const chartData =
     {
         "Day": "Tuesday",
         "12a":745,
-        "3a":415,
+        "inter":415,
         "6a":804,
         "9a":1126,
         "12p":1293,
@@ -27,7 +27,7 @@ export const chartData =
         "Day": "Wednesday",
         "12a":761,
         "3a":404,
-        "6a":787,
+        "inter":787,
         "9a":1135,
         "12p":1309,
         "3p":1384,
@@ -39,7 +39,7 @@ export const chartData =
         "12a":775,
         "3a":434,
         "6a":760,
-        "9a":1126,
+        "inter":1126,
         "12p":1307,
         "3p":1376,
         "6p":1409,
@@ -51,7 +51,7 @@ export const chartData =
         "3a":441,
         "6a":743,
         "9a":1118,
-        "12p":1297,
+        "inter":1297,
         "3p":1380,
         "6p":1394,
         "9p":1296,
@@ -64,7 +64,7 @@ export const chartData =
         "9a":1086,
         "12p":1317,
         "3p":1345,
-        "6p":1386,
+        "inter":1386,
         "9p":1306,
     },
     {
@@ -76,6 +76,6 @@ export const chartData =
         "12p":1315,
         "3p":1380,
         "6p":1396,
-        "9p":1302,
+        "inter":1302,
     },
 ]

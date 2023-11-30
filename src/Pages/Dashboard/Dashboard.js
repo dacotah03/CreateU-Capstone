@@ -5,8 +5,10 @@ import notify from '../../assets/icons/🦆 icon _bell outline_.png';
 import pfp2 from '../../assets/user2.JPG';
 import { useNavigate } from 'react-router';
 import NavBar from '../../components/NavBar/NavBar';
+import { UserData } from '../../components/Data/Data';
 import BarChart from '../../components/Chart/Chart';
 import { chartData } from '../../components/Data/Data';
+import chart1 from '../../assets/bar.jpg';
 
 const Dashboard = () => {
     const navigate = useNavigate();
@@ -32,12 +34,19 @@ const Dashboard = () => {
     // ];
 
     // const [currentChart, setCurrentChart] = useState(charts[0]);
+    const [userData, setUserData] = useState({
+        labels: UserData.map((data) => data.inter),
+        datasets: [{
+          label: "Employee",
+          data: UserData.map((data) => data.inter),
+          backgroundColor: ["red","blue","green"]
+        }]
+      })
+    // useEffect(() => {
+    //     return () => {
+    //     }
 
-    useEffect(() => {
-        return () => {
-        }
-
-    },[]);
+    // },[]);
 
     return (
         <div className='dashboard'>
@@ -76,6 +85,7 @@ const Dashboard = () => {
                 </div>
                 <div className='dashboard__stats-charts'>
                 <div className='dashboard__stats-charts-placeholder'>
+                    <img className='dashboard__stats-charts-placeholder-2' src={chart1}/>
                     {/* <BarChart chartData={currentChart} /> */}
                 </div>
                 <button

@@ -1,17 +1,13 @@
-import React, { useEffect } from 'react';
+
 import { Bar } from 'react-chartjs-2';
+import {Chart as ChartJS} from 'chart.js/auto';
 
-const BarChart = ({ chartData }) => {
-  useEffect(() => {
-    // Ensure the category scale is registered when the component mounts
-    Bar.scaleService.updateScaleDefaults('category', {
-      ticks: {
-        beginAtZero: true,
-      },
-    });
-  }, []);
-
-  return <Bar data={chartData} />;
-};
-
-export default BarChart;
+const BarGraph = ({chartData}) => {
+    return ( 
+        <>
+        <Bar data = {chartData}/>
+        </>
+     );
+}
+ 
+export default BarGraph;
