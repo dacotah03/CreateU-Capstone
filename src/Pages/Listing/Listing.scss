@@ -1,5 +1,6 @@
+@use "../../styles/partials/__variables.scss" as * ;
 .listing{
-    background-color: #1E1E1E;
+    background-color: $create-black;
     width: 100%;
     padding: 1rem;
     // padding-left: 0rem;
@@ -9,6 +10,9 @@
         justify-content: space-between;
         &-menu{
             width: 3rem;
+        }
+        &-logo{
+            width: 10rem;
         }
         &-userpfp{
             width: 4rem;
@@ -33,34 +37,40 @@
         }
     }
     &__main{
-        background-color: #CCFCFF;
+        background-color: $create-lightblue;
         padding: 1rem;
         &-info{
-            background-color: #1E1E1E;
+            background-color: $create-black;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-between;
             padding: 1rem;
             margin-bottom: 1rem;
+            &-content{
+                height: 30rem;
+                background-color: aliceblue;
+                position: fixed;
+                width: 21rem;
+            }
 
             p{
-                color: #CCFCFF;
+                color: $create-lightblue;
             }
         }
         &-text{
             p{
-                color: #1E1E1E;
+                color: $create-black;
             }
             &-title{
-                background-color: #AFAFAF;
+                background-color: $create-grey;
                 height: 3rem;
                 display: flex;
                 justify-content: center;
                 font-weight: 700;
             }
             &-description{
-                background-color: #AFAFAF;
+                background-color: $create-grey;
                 padding-left: 1rem;
             }
         }
