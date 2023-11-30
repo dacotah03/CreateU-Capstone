@@ -1,5 +1,7 @@
+@use "../../styles/partials/__variables.scss" as * ;
+
 .proposals{
-    background-color: #1E1E1E;
+    background-color: $create-black;
     width: 100%;
     padding: 1rem;
     &__top{
@@ -20,7 +22,7 @@
         flex-direction: row;
         justify-content: center;
         &-text{
-            color: #CCFCFF;
+            color: $create-lightblue;
         }
     }
     &__nav{
@@ -35,16 +37,16 @@
             position: relative;
             left: 2rem;
             &-select{
-                background-color: #00696F;
-                color: #FFFFFF;
+                background-color: $create-teal;
+                color: $create-white;
                 width: 30vw;
                 height: 4vh;
                 border-radius: 5rem;
                 border: none;
             }
             &-unselected{
-                background-color: #CCFCFF;
-                color: #1E1E1E;
+                background-color: $create-teal;
+                color: $create-black;
                 width: 30vw;
                 height: 4vh;
                 border-radius: 5rem;
@@ -59,7 +61,7 @@
     }
 
     &__main{
-        background-color: #CCFCFF;
+        background-color: $create-lightblue;
         height: 80vh;
         padding: 1rem;
         &-approved{
@@ -71,7 +73,7 @@
                         height: 16vh;
                     &-jobs{
                         border-radius: .6rem;
-                        background-color: #1E1E1E;
+                        background-color: $create-black;
                         display: flex;
                         flex-direction: row;
                         justify-content: space-around;
@@ -79,7 +81,7 @@
                         align-items: center;
 
                         p{
-                            color: #FFFFFF;
+                            color: $create-white;
                             font-size: .6rem;
                         }
                     }
@@ -95,7 +97,7 @@
                         height: 16vh;
                     &-jobs{
                         border-radius: .6rem;
-                        background-color: #1E1E1E;
+                        background-color: $create-black;
                         display: flex;
                         flex-direction: row;
                         justify-content: space-around;
@@ -103,7 +105,7 @@
                         align-items: center;
 
                         p{
-                            color: #FFFFFF;
+                            color: $create-white;
                             font-size: .6rem;
                         }
                     }
@@ -123,7 +125,7 @@
                     height: 16vh;
                 &-jobs{
                     border-radius: .6rem;
-                    background-color: #1E1E1E;
+                    background-color: $create-teal;
                     display: flex;
                     flex-direction: row;
                     justify-content: space-around;
@@ -131,7 +133,7 @@
                     align-items: center;
 
                     p{
-                        color: #FFFFFF;
+                        color: $create-white;
                         font-size: .6rem;
                     }
                 }

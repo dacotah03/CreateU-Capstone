@@ -1,5 +1,7 @@
+@use "../../styles/partials/__variables.scss" as * ;
+@use "../../styles/partials/_mixins" as * ;
 .dashboard{
-    background-color: #1E1E1E;
+    background-color: $create-black;
     width: 100%;
     padding: 1rem;
     &__top{
@@ -8,6 +10,12 @@
         justify-content: space-between;
         &-menu{
             width: 3rem;
+        }
+        &-logo{
+            height: 10rem;
+            @include tablet{
+                height: 13rem;
+            }
         }
         &-userpfp{
             width: 4rem;
@@ -20,13 +28,14 @@
         flex-direction: row;
         justify-content: center;
         &-text{
-            color: #CCFCFF;
+            color: $create-lightblue;
         }
     }
     &__nav{
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+        z-index: 1;
         &-buttons{
             display: flex;
             flex-direction: row;
@@ -35,16 +44,16 @@
             position: relative;
             left: 2rem;
             &-select{
-                background-color: #00696F;
-                color: #FFFFFF;
+                background-color: $create-teal;
+                color: $create-white;
                 width: 30vw;
                 height: 4vh;
                 border-radius: 5rem;
                 border: none;
             }
             &-unselected{
-                background-color: #CCFCFF;
-                color: #1E1E1E;
+                background-color: $create-lightblue;
+                color: $create-black;
                 width: 30vw;
                 height: 4vh;
                 border-radius: 5rem;
@@ -58,23 +67,23 @@
         justify-content: space-between;
         &-trending{
             &-header{
-                color: #CCFCFF;
+                color: $create-lightblue;
             }
             &-background{
-                background-color: #00696F;
+                background-color: $create-teal;
                 border-radius: 5rem;
                 width: 30vw;
                 &-user{
-                    color: #CCFCFF;
+                    color: $create-lightblue;
                     display: flex;
                     flex-direction: row;
                     justify-content: center;
                 }
             }
             &-achievements{
-                background-color: #00696F;
+                background-color: $create-teal;
                 height: 30vh;
-                color: #CCFCFF;
+                color: $create-lightblue;
                 display: flex;
                 justify-content: center;
             }
@@ -86,7 +95,7 @@
             padding-top: 3rem;        
             &-placeholder{
                 border-radius: 1.5rem;
-                background-color: #00696F;
+                background-color: $create-teal;
                 width: 55vw;
                 height: 20vh;   
                 margin-bottom: 1rem;         
@@ -95,7 +104,7 @@
                 border-radius: 0.5rem;
                 width: 40vw;
                 height: 5vh;
-                background-color: #CCFCFF;
+                background-color: $create-lightblue;
                 &-icons{
                     height: 1rem;
                 }
@@ -108,7 +117,7 @@
         flex-direction: column;
         align-items: center;
         &-header{
-            color: #CCFCFF;
+            color: $create-lightblue;
         }
         &-pfps{
             display: flex;
@@ -128,7 +137,7 @@
         flex-direction: column;
         align-items: center;
         &-placeholder{
-            background-color: #CCFCFF;
+            background-color: $create-lightblue;
             width: 80vw;
             height: 20vh;
             border-radius: 1rem;

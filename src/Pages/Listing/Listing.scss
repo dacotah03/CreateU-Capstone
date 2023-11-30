@@ -1,13 +1,18 @@
+@use "../../styles/partials/__variables.scss" as * ;
 .listing{
-    background-color: #1E1E1E;
+    background-color: $create-black;
     width: 100%;
     padding: 1rem;
+    // padding-left: 0rem;
     &__top{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         &-menu{
             width: 3rem;
+        }
+        &-logo{
+            width: 10rem;
         }
         &-userpfp{
             width: 4rem;
@@ -19,6 +24,7 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
+        align-items: center;
         &-text{
             width: 70vw;
             height: 4vh;
@@ -26,13 +32,47 @@
         }
         &-search{
             width: 3.5rem;
+            position: relative;
+            top: 3rem;
         }
     }
     &__main{
-        background-color: #CCFCFF;
-        height: 80vh;
+        background-color: $create-lightblue;
+        padding: 1rem;
         &-info{
-            background-color: #1E1E1E;
+            background-color: $create-black;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            &-content{
+                height: 30rem;
+                background-color: aliceblue;
+                position: fixed;
+                width: 21rem;
+            }
+
+            p{
+                color: $create-lightblue;
+            }
+        }
+        &-text{
+            p{
+                color: $create-black;
+            }
+            &-title{
+                background-color: $create-grey;
+                height: 3rem;
+                display: flex;
+                justify-content: center;
+                font-weight: 700;
+            }
+            &-description{
+                background-color: $create-grey;
+                padding-left: 1rem;
+            }
         }
     }
 }

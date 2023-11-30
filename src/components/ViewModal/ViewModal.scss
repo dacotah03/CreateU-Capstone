@@ -1,0 +1,22 @@
+@use "../../styles/partials/__variables.scss" as * ;
+
+.viewmodal{
+    &__menu{
+        height: 2rem;
+    }
+    &__main{
+        background-color: aliceblue;
+        height: -webkit-fill-available;
+        position: fixed;
+        width: 50%;
+        z-index: 2;
+        &-tabs{
+            display: flex;
+            flex-direction: column;
+            p{
+                font-size: 1.5rem;
+                font-weight: 300;
+            }            
+        }
+    }
+}

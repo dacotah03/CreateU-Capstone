@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import Mobile from '../src/pages/Mobile/Mobile'
 
